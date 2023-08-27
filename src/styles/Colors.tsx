@@ -10,7 +10,7 @@ export const COLOR_BLACK = '#090909';
 
 //GRAY COLOR
 export const COLOR_GRAY = '#969696';
-export const COLOR_GRAY_DARK = '#4f4f4f';
+export const COLOR_GRAY_DARK = '#A3A3A3';
 export const COLOR_GRAY_LIGHT = '#e3e3e3';
 
 //OTHER

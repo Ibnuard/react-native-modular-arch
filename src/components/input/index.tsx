@@ -17,7 +17,7 @@ const Input = ({placeholder, containerStyle, ...rest}: IInput) => {
         {...rest}
         placeholder={placeholder}
         style={styles.input}
-        placeholderTextColor={Colors.COLOR_GRAY_LIGHT}
+        placeholderTextColor={Colors.COLOR_GRAY_DARK}
       />
     </View>
   );

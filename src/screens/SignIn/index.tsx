@@ -4,11 +4,11 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import styles from './styles';
 import {ApplicationScreenProps} from '../../../@types/navigation';
 import {Button, Input} from '../../components';
-import {useDispatch} from 'react-redux';
 import {setSignIn} from '../../redux/slices/authSlice';
+import {useAppDispatch} from '../../redux/hook';
 
 const SignInScreen = ({navigation}: ApplicationScreenProps) => {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   const handleLogin = () => {
     const user = {

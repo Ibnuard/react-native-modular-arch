@@ -6,6 +6,8 @@ export default StyleSheet.create({
     backgroundColor: Colors.COLOR_WHITE,
     paddingHorizontal: Size.SIZE_10,
     borderRadius: 8,
+    borderWidth: 0.5,
+    borderColor: Colors.COLOR_GRAY_DARK,
   },
 
   input: {
