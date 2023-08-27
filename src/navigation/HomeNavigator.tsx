@@ -1,6 +1,7 @@
+import ModuleAlphaNavigator from '../modules/alpha/navigation';
 import HomeScreen from '../screens/Home';
 import ProfileScreen from '../screens/Profile';
-import {Tab} from '../service/navigation';
+import {Stack, Tab} from '../service/navigation';
 
 // Screens
 
@@ -8,9 +9,39 @@ import {Tab} from '../service/navigation';
 const HomeNavigator = () => {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen
+        name="Home"
+        component={HomeStack}
+        options={{
+          headerShown: false,
+        }}
+      />
       <Tab.Screen name="Profile" component={ProfileScreen} />
     </Tab.Navigator>
+  );
+};
+
+// Nested Child
+
+// Home Stack Screen
+const HomeStack = () => {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen
+        name="HomeInit"
+        component={HomeScreen}
+        options={{
+          title: 'Home',
+        }}
+      />
+      <Stack.Screen
+        name="Module.Aplha"
+        component={ModuleAlphaNavigator}
+        options={{
+          headerShown: false,
+        }}
+      />
+    </Stack.Navigator>
   );
 };
 
