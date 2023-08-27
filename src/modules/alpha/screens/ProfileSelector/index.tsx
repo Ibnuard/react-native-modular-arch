@@ -1,4 +1,3 @@
-import {Text, View} from 'react-native';
 import React from 'react';
 import {ApplicationScreenProps} from '../../../../../@types/navigation';
 import styles from './styles';
