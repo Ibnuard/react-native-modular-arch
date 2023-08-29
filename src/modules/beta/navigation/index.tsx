@@ -1,4 +1,4 @@
-import {Stack} from '../../../service/navigation';
+import {Stack} from '../../../service/NavigationServices';
 import BetaUserListScreen from '../screens/UserList';
 
 // create beta module navigator

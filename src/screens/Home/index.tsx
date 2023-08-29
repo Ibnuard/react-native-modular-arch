@@ -9,7 +9,7 @@ import React from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {ApplicationScreenProps} from '../../../@types/navigation';
 import styles from './styles';
-import {IMAGES_ASSETS} from '../../service/assetLoader';
+import {IMAGES_ASSETS} from '../../service/AssetsLoader';
 
 const HomeScreen = ({navigation}: ApplicationScreenProps) => {
   // dummy modules

@@ -1,6 +1,6 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {IMAGES_ASSETS} from './assetLoader';
+import {IMAGES_ASSETS} from './AssetsLoader';
 import {Image, ImageSourcePropType} from 'react-native';
 import {Size} from '../styles';
 

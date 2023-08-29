@@ -1,6 +1,9 @@
 import axios from 'axios';
 import {API_METHOD, API_STATES} from '../constants';
 import {BASE_URL} from './api';
+import {setupInterceptorsTo} from '../service/AxiosInterceptors';
+
+setupInterceptorsTo(axios);
 
 // Params interface
 interface RequestParams {

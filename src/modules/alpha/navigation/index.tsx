@@ -1,4 +1,4 @@
-import {Stack} from '../../../service/navigation';
+import {Stack} from '../../../service/NavigationServices';
 import AlphaProfileDetailScreen from '../screens/ProfileDetail';
 import AlphaProfileSelectorScreen from '../screens/ProfileSelector';
 

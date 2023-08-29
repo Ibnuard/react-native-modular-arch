@@ -2,7 +2,7 @@ import {getFocusedRouteNameFromRoute} from '@react-navigation/native';
 import ModuleAlphaNavigator from '../modules/alpha/navigation';
 import HomeScreen from '../screens/Home';
 import ProfileScreen from '../screens/Profile';
-import {Stack, Tab, renderBottomTabIcon} from '../service/navigation';
+import {Stack, Tab, renderBottomTabIcon} from '../service/NavigationServices';
 import ModuleBetaNavigator from '../modules/beta/navigation';
 
 // Screens

@@ -1,4 +1,4 @@
-import {Stack} from '../service/navigation';
+import {Stack} from '../service/NavigationServices';
 
 import SignInScreen from '../screens/SignIn';
 
