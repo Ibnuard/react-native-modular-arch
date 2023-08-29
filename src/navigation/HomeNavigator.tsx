@@ -3,6 +3,7 @@ import ModuleAlphaNavigator from '../modules/alpha/navigation';
 import HomeScreen from '../screens/Home';
 import ProfileScreen from '../screens/Profile';
 import {Stack, Tab, renderBottomTabIcon} from '../service/navigation';
+import ModuleBetaNavigator from '../modules/beta/navigation';
 
 // Screens
 
@@ -53,6 +54,13 @@ const HomeStack = () => {
       <Stack.Screen
         name="Module.Aplha"
         component={ModuleAlphaNavigator}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="Module.Beta"
+        component={ModuleBetaNavigator}
         options={{
           headerShown: false,
         }}

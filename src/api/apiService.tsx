@@ -1,5 +1,6 @@
 import axios from 'axios';
 import {API_METHOD, API_STATES} from '../constants';
+import {BASE_URL} from './api';
 
 // Params interface
 interface RequestParams {
@@ -11,7 +12,7 @@ interface RequestParams {
 
 // helper config
 const baseConfig: RequestParams = {
-  baseUrl: '',
+  baseUrl: BASE_URL,
   timeout: 15000,
   headers: {
     'Content-type': 'application/json; charset=UTF-8',
@@ -38,8 +39,8 @@ const ResponseHandler = (response: any): IResponseBase => {
 export const fetchAPI = async (
   url: string,
   method: string,
-  data: any,
-  customHeaders: any,
+  data?: any,
+  customHeaders?: any,
 ): Promise<any> => {
   return await axios({
     ...baseConfig,
