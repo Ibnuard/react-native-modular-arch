@@ -8,11 +8,12 @@ import {Colors} from '../../styles';
 interface IInput extends PropsWithoutRef<TextInputProps> {
   placeholder?: string;
   containerStyle?: ViewStyle;
+  testID?: string;
 }
 
-const Input = ({placeholder, containerStyle, ...rest}: IInput) => {
+const Input = ({placeholder, containerStyle, testID, ...rest}: IInput) => {
   return (
-    <View style={[styles.container, containerStyle]}>
+    <View testID="inputTest" style={[styles.container, containerStyle]}>
       <TextInput
         {...rest}
         placeholder={placeholder}

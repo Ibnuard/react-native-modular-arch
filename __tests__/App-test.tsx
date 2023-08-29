@@ -8,7 +8,7 @@ const sleep = (ms: number) =>
 
 jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');
 
-it('renders correctly', async () => {
+it('App render correctly', async () => {
   const tree = renderer.create(<App />).toJSON();
   expect(tree).toMatchSnapshot();
   await sleep(10);

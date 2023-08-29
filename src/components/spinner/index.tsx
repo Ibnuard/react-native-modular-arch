@@ -3,10 +3,17 @@ import React from 'react';
 import styles from './styles';
 import {Colors} from '../../styles';
 
-const Spinner = () => {
+interface ISpinner {
+  testID?: string;
+}
+
+const Spinner = ({testID}: ISpinner) => {
   return (
-    <View style={styles.container}>
-      <ActivityIndicator color={Colors.COLOR_ACCENT} />
+    <View testID="spinner-container" style={styles.container}>
+      <ActivityIndicator
+        testID="activity-indicator"
+        color={Colors.COLOR_ACCENT}
+      />
     </View>
   );
 };

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`App render correctly 1`] = `
 <RNCSafeAreaProvider
   onInsetsChange={[Function]}
   style={
@@ -124,6 +124,7 @@ exports[`renders correctly 1`] = `
                   undefined,
                 ]
               }
+              testID="inputTest"
             >
               <TextInput
                 placeholder="Masukan Email"

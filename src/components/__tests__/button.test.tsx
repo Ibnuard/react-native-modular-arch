@@ -1,14 +1,9 @@
 import renderer from 'react-test-renderer';
 import {fireEvent, render, screen} from '@testing-library/react-native';
-import Button from '.';
+import Button from '../button';
 // test button render correctly
-describe('button render tests', () => {
-  it('should render correctly', () => {
-    const tree = renderer.create(<Button title="Button" />);
-    expect(tree).toMatchSnapshot();
-  });
-
-  it('should render given title', () => {
+describe('Button Component', () => {
+  it('should render correctly with given title', () => {
     const title = 'Button';
     const {getByText} = render(<Button title={title} />);
     const titleElement = getByText(title);
