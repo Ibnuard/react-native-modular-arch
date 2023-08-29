@@ -2,7 +2,7 @@ import {getFocusedRouteNameFromRoute} from '@react-navigation/native';
 import ModuleAlphaNavigator from '../modules/alpha/navigation';
 import HomeScreen from '../screens/Home';
 import ProfileScreen from '../screens/Profile';
-import {Stack, Tab} from '../service/navigation';
+import {Stack, Tab, renderBottomTabIcon} from '../service/navigation';
 
 // Screens
 
@@ -11,6 +11,7 @@ const HomeNavigator = () => {
   return (
     <Tab.Navigator
       screenOptions={({route}) => ({
+        tabBarIcon: ({focused}) => renderBottomTabIcon({focused, route}),
         tabBarStyle: (route => {
           const routeName = getFocusedRouteNameFromRoute(route) ?? '';
           if (
