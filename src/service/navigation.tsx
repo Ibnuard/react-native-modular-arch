@@ -23,17 +23,14 @@ interface INavigationProps {
   color?: string;
   size?: number;
 }
-export const renderBottomTabIcon = ({
-  route,
-  focused,
-  color,
-  size,
-}: INavigationProps) => {
+export const renderBottomTabIcon = ({route, focused}: INavigationProps) => {
   let icon: ImageSourcePropType;
 
   if (route.name == 'Home') {
+    // Home Icon
     icon = IMAGES_ASSETS.bottomTabIcon.home[focused ? 'active' : 'inactive'];
   } else {
+    // Profile Icon
     icon = IMAGES_ASSETS.bottomTabIcon.profile[focused ? 'active' : 'inactive'];
   }
 
