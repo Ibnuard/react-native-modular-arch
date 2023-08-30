@@ -41,9 +41,10 @@ const BetaUserListScreen = ({navigtaion}: ApplicationScreenProps) => {
   return (
     <View style={styles.container}>
       {isLoading ? (
-        <Spinner />
+        <Spinner testID="spinner-container" />
       ) : (
         <FlatList
+          testID="user-list"
           contentContainerStyle={styles.userList}
           data={users}
           showsVerticalScrollIndicator={false}
